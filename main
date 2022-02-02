@@ -1,0 +1,45 @@
+
+tempfrom = input("Welcome to the temperature converter.\nWhat unit of temperature will you be converting from? \nEnter either Fahrenheit, Celsius, or Kelvin: ")
+
+tempto = input("What unit of temperature will you be converting to? \nEnter either Fahrenheit, Celsius, or Kelvin: ")
+
+originaltemp = input("What is your original temperature? ")
+
+
+if tempfrom == ("Fahrenheit"):
+
+        if tempto == ("Celsius"):
+                fc1 = int(originaltemp) - 32
+                fc2 = fc1 * .5556
+                print(fc2)
+
+        if tempto == ("Kelvin"):
+                fk1 = int(originaltemp) - 32
+                fk2 = fk1 * 5/9
+                fk3 = fk2 + 273.15
+                print(fk3)
+
+
+if tempfrom == ("Celsius"):
+        
+        if tempto == ("Fahrenheit"):
+                cf1 = int(originaltemp) * 1.8
+                cf2 = cf1 + 32
+                print(cf2)
+
+        if tempto == ("Kelvin"):
+                ck1 = int(originaltemp) + 273.15
+                print(ck1)
+
+
+if tempfrom == ("Kelvin"):
+        
+        if tempto == ("Celsius"):
+                kc1 = int(originaltemp) - 273.15
+                print(kc1)
+
+        if tempto == ("Fahrenheit"):
+                kf1 = int(originaltemp) - 273.15
+                kf2 = kf1 * 1.8
+                kf3 = kf2 + 32
+                print(kf3)
